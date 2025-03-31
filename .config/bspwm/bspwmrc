@@ -25,15 +25,13 @@ bspc config normal_border_color "$color1"
 bspc config active_border_color "$color2"
 bspc config active_border_color "$color15"
 bspc config presel_feedback_color "$color1"
-
-#xrandr --output DP-4 --primary --right-ofrDP-3 --mode 2560x1440 --rate 164.83 --output HDMI-0 --right-of DP-4 --output DP-3 --rotate left
-
 bspc wm --reorder-monitors DP-4 HDMI-0 DP-3
-
 bspc config pointer_motion_interval 6ms
 
+wal -i ~/wallpapers/Simon/
 redshift -c .config/redshift/redshift.conf &
 sxhkd &
+snycthing-gtk &
 picom --config .config/picom/picom.conf &
 ~/.config/polybar/launch.sh
 betterlockscreen -l
