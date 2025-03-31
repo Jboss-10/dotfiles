@@ -36,3 +36,4 @@ picom --config .config/picom/picom.conf &
 ~/.config/polybar/launch.sh
 betterlockscreen -l
 steam -silent &
+clipmenud &
