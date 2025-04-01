@@ -177,3 +177,4 @@ alias todonext 'todops | head -10 | nl'
 alias newwal '~/.scripts/changewallpaper.sh'
 alias rm trash-put
 alias gitshow 'git log --all --topo-order --graph --show-signature --oneline'
+alias gitshowlong ' git log --all --topo-order --graph --show-signature'
