@@ -5,6 +5,10 @@ These are my personal dotfiles.
 ## Programs
 
 - bspwm
-- rofi
+- fish
+- picom
 - polybar
-- startship
+- rofi
+- sxhkd
+- starship
+
