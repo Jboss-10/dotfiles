@@ -164,7 +164,7 @@ alias ripall 'expac --timefmt="%Y-%m-%d %T" "%l\t%n - %v" | sort | nl'
 
 ## Run fastfetch if session is interactive
 if status --is-interactive && type -q fastfetch
-    fastfetch --config paleofetch.jsonc
+    fastfetch --config .config/fastfetch/config.jsonc
 end
 #source ~/.cache/wal/sequences
 #wal -R -q
