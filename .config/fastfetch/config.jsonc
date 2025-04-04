@@ -15,7 +15,6 @@
     "host",
     "kernel",
     "uptime",
-    "cpu",
     "break",
     "colors"
   ]
