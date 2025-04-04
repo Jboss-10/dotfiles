@@ -4,18 +4,16 @@
     "source": "arch_small",
     "padding": {
       "top": 0,
-      "left": 0,
-      "right": 0
+      "left": 1,
+      "right": 1
     }
   },
   "modules": [
     "title",
-    "separator",
     "os",
     "host",
     "kernel",
     "uptime",
-    "break",
     "colors"
   ]
 }
