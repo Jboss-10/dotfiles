@@ -182,3 +182,4 @@ alias gittreelong ' git log --all --topo-order --graph --show-signature'
 
 abbr nivm nvim
 abbr rm trash-put
+abbr g git
