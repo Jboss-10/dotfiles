@@ -175,6 +175,10 @@ alias todop 'todoist s ; todoist l | grep -v "Busses"'
 alias todops 'todop | cut -f 2- -d " " | sort'
 alias todonext 'todops | head -10 | nl'
 alias newwal '~/.scripts/changewallpaper.sh'
-alias rm trash-put
 alias gittree 'git log --all --topo-order --graph --show-signature --oneline'
 alias gittreelong ' git log --all --topo-order --graph --show-signature'
+
+# Personal Abbreviations
+
+abbr nivm nvim
+abbr rm trash-put
