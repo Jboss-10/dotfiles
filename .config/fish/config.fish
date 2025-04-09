@@ -169,6 +169,9 @@ end
 #source ~/.cache/wal/sequences
 #wal -R -q
 
+# fzf
+fzf --fish | source
+
 # Personal Aliases
 alias todo 'todoist s ; todoist l'
 alias todop 'todoist s ; todoist l | grep -v "Busses"'
