@@ -171,6 +171,7 @@ end
 
 # fzf
 fzf --fish | source
+fzf_configure_bindings --directory=\cf --variables=\e\cv
 
 # Personal Aliases
 alias todo 'todoist s ; todoist l'
