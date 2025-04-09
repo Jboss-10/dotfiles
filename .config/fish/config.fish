@@ -177,12 +177,18 @@ alias todonext 'todops | head -10 | nl'
 alias newwal '~/.scripts/changewallpaper.sh'
 alias gittree 'git log --all --topo-order --graph --show-signature --oneline'
 alias gittreelong ' git log --all --topo-order --graph --show-signature'
+alias rm 'rm -i'
 
 # Personal Abbreviations
 
 abbr nivm nvim
 abbr rm trash-put
 abbr g git
+
+abbr --command git c 'commit -am'
+abbr --command git co checkout
+abbr --command git d diff
+abbr --command git pom 'push origin master'
 
 function last_history_item
     echo $history[1]
