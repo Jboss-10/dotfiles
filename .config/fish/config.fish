@@ -176,5 +176,5 @@ alias todops 'todop | cut -f 2- -d " " | sort'
 alias todonext 'todops | head -10 | nl'
 alias newwal '~/.scripts/changewallpaper.sh'
 alias rm trash-put
-alias gitshow 'git log --all --topo-order --graph --show-signature --oneline'
-alias gitshowlong ' git log --all --topo-order --graph --show-signature'
+alias gittree 'git log --all --topo-order --graph --show-signature --oneline'
+alias gittreelong ' git log --all --topo-order --graph --show-signature'
