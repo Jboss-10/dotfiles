@@ -183,3 +183,8 @@ alias gittreelong ' git log --all --topo-order --graph --show-signature'
 abbr nivm nvim
 abbr rm trash-put
 abbr g git
+
+function last_history_item
+    echo $history[1]
+end
+abbr -a !! --position anywhere --function last_history_item
