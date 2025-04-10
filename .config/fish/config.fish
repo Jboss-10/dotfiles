@@ -36,9 +36,7 @@ if test -d ~/Applications/depot_tools
 end
 
 ## Starship prompt
-if status --is-interactive
-    source ("/usr/bin/starship" init fish --print-full-init | psub)
-end
+source ("/usr/bin/starship" init fish --print-full-init | psub)
 
 ## Advanced command-not-found hook
 source /usr/share/doc/find-the-command/ftc.fish
