@@ -10,9 +10,9 @@
   },
   "modules": [
     "title",
-    "uptime",
     "packages",
     "processes",
+    "loadavg",
     "uptime",
     "colors"
   ]
