@@ -12,3 +12,4 @@ These are my personal dotfiles.
 - rofi
 - sxhkd
 - starship
+- fisher
