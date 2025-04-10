@@ -10,9 +10,9 @@
   },
   "modules": [
     "title",
-    "os",
-    "host",
-    "kernel",
+    "uptime",
+    "packages",
+    "processes",
     "uptime",
     "colors"
   ]
