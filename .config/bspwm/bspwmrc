@@ -37,6 +37,6 @@ picom --config .config/picom/picom.conf &
 ~/.config/polybar/launch.sh
 steam -silent &
 clipmenud &
-arbbt-capture &
+arbbt-capture --sample-rate 1 &
 
 betterlockscreen -l
