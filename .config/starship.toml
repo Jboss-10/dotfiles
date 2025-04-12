@@ -91,8 +91,8 @@ symbol = ''
 
 [character]
 format = "$symbol "
-success_symbol = "[◎❯](bold italic bright-yellow)"
-error_symbol = "[○❯](italic purple)"
+success_symbol = "[❯](bold italic bright-yellow)"
+error_symbol = "[❯](italic purple)"
 vimcmd_symbol = "[■❯](italic dimmed green)"
 # not supported in zsh
 vimcmd_replace_one_symbol = "◌"
@@ -117,9 +117,10 @@ disabled = false
 show_always = false
 
 [directory]
-home_symbol = "⌂"
-truncation_length = 10
+home_symbol = "~"
+truncation_length = 3
 truncation_symbol = ".../"
+truncate_to_repo = false
 read_only = " ◈"
 use_os_path_sep = true
 style = "italic blue"
