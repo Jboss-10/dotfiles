@@ -32,7 +32,7 @@ wal -i ~/wallpapers/Simon/
 redshift -c .config/redshift/redshift.conf &
 sxhkd &
 bspc desktop -f 1
-syncthing &
+syncthing --no-browser &
 picom --config .config/picom/picom.conf &
 ~/.config/polybar/launch.sh
 steam -silent &
