@@ -28,13 +28,6 @@ if test -d ~/.local/bin
     end
 end
 
-# Add depot_tools to PATH
-if test -d ~/Applications/depot_tools
-    if not contains -- ~/Applications/depot_tools $PATH
-        set -p PATH ~/Applications/depot_tools
-    end
-end
-
 ## Starship prompt
 source ("/usr/bin/starship" init fish --print-full-init | psub)
 
@@ -45,8 +38,3 @@ source /usr/share/doc/find-the-command/ftc.fish
 if status --is-interactive && type -q fastfetch
     fastfetch --config .config/fastfetch/config.jsonc
 end
-
-# fzf
-fzf --fish | source
-fzf_configure_bindings --directory=\cf --variables=\e\cv
-set fzf_fd_opts --hidden --exclude=.git
