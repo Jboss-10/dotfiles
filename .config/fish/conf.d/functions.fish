@@ -28,11 +28,6 @@ else
     bind '$' __history_previous_command_arguments
 end
 
-# Fish command history
-function history
-    builtin history --show-time='%F %T '
-end
-
 function backup --argument filename
     cp $filename $filename.bak
 end
