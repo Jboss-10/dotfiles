@@ -38,5 +38,3 @@ picom --config .config/picom/picom.conf &
 steam -silent &
 clipmenud &
 arbtt-capture --sample-rate 1 &
-
-betterlockscreen -l
