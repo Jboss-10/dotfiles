@@ -51,6 +51,7 @@ function cleanup
     end
 end
 
+# my update script
 function myupdate
     paru -Suy
     nvim --headless "+Lazy! sync" +qa | rg --color=never "log.*\s\|\s"

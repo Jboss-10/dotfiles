@@ -30,6 +30,9 @@ super + l
 super + @space
 	konsole
 
+super + p
+  konsole -e fish -P
+
 # program launcher
 super + Return
 	rofi -show drun -m 2
