@@ -12,6 +12,7 @@ $env_var\
 $jobs\
 $sudo\
 $username\
+$private\
 $character"""
 
 right_format = """
@@ -314,3 +315,7 @@ unknown_msg = '[◌](bold dimmed ellow)'
 [spack]
 symbol = "◇ "
 format = " spack [$symbol$environment]($style)"
+
+[custom.private]
+when = 'test "$IS_PRIVATE" = 1'
+format = "🙈"

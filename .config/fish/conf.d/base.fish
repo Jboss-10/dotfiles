@@ -11,6 +11,10 @@ if type qtile >>/dev/null 2>&1
     set -x QT_QPA_PLATFORMTHEME qt5ct
 end
 
+if set -q fish_private_mode
+    set -gx IS_PRIVATE 1
+end
+
 # Set settings for https://github.com/franciscolourenco/done
 set -U __done_min_cmd_duration 10000
 set -U __done_notification_urgency_level low
