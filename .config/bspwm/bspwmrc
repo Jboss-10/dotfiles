@@ -31,6 +31,7 @@ bspc config pointer_motion_interval 6ms
 wal -i ~/wallpapers/Simon/
 redshift -c .config/redshift/redshift.conf &
 sxhkd &
+dunst &
 bspc desktop -f 1
 syncthing --no-browser &
 picom --config .config/picom/picom.conf &
