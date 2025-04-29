@@ -1,10 +1,10 @@
 #Location: ~/.config/starship.toml
 #What_is_starship: https://starship.rs/
 
-add_newline = false
+add_newline = falsee
 command_timeout = 2000
 
-format = """$env_var$username$kubernetes$directory$git_branch$git_status$python
+format = """$env_var$username$kubernetes$directory$git_branch$git_status$python$git_metrics
 $character
 """
 
@@ -86,6 +86,14 @@ modified = ' '
 staged = '[++\($count\)](green)'
 renamed = '襁 '
 deleted = ' '
+
+# Shows git infomation about uncommited changes
+[git_metrics]
+format = '([▴$added]($added_style))([▿$deleted]($deleted_style))'
+added_style = 'italic dimmed green'
+deleted_style = 'italic dimmed red'
+ignore_submodules = true
+disabled = false
 
 # Shows kubernetes context and namespace
 [kubernetes]
