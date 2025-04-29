@@ -25,8 +25,8 @@ $HOME/setbspwmcolors.sh
 bspc wm --reorder-monitors DP-4 HDMI-0 DP-3
 bspc config pointer_motion_interval 6ms
 
-# wal -i ~/wallpapers/Simon/
-wal -R
+wal -i ~/wallpapers/Simon/
+wal --theme random
 redshift -c .config/redshift/redshift.conf &
 sxhkd &
 dunst &
