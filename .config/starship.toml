@@ -1,7 +1,7 @@
 #Location: ~/.config/starship.toml
 #What_is_starship: https://starship.rs/
 
-add_newline = falsee
+add_newline = false
 command_timeout = 2000
 
 format = """$env_var$username$kubernetes$directory$git_branch$git_status$python$git_metrics
