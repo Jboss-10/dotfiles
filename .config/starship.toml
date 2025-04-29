@@ -4,9 +4,9 @@
 add_newline = false
 command_timeout = 2000
 
-format = """╭──────❯
-│$username$kubernetes$directory$git_branch$git_status$git_metrics$python
-╰─❯ 
+format = """[╭──────❯](cyan)
+[│](cyan)$username$kubernetes$directory$git_branch$git_status$git_metrics$python
+[╰─❯](cyan) 
 """
 
 [env_var]
@@ -18,12 +18,12 @@ disabled = false
 [username]
 style_user = 'yellow bold'
 style_root = 'black bold'
-format = '[$user](green) '
+format = '[$user](green)$hostname '
 disabled = false
 show_always = true
 
 [hostname]
-ssh_only = false
+ssh_only = true
 format = '[//](black bold) [$hostname](bold blue) '
 disabled = false
 
