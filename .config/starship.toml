@@ -9,20 +9,17 @@ $character
 """
 
 [character]
-success_symbol = "╰->>"
-error_symbol = "╰-->"
+success_symbol = "╰❯"
+error_symbol = "╰❯"
 # ╭╴ ╰─
+# ❯
+# ╰--> ╰->>
 
 [env_var]
-symbol = "╭╴"
+symbol = "╭──"
 variable = 'SHELL'
 format = "$symbol"
 disabled = false
-
-
-#warp-Drop ugly default prompt characters
-#success_symbol = ""
-#error_symbol = ""
 
 # ---
 
@@ -37,13 +34,13 @@ Ubuntu = ''
 Macos = '󰀵'
 Unknown = '󰠥'
 
-# ---y
+# ---
 
 # Shows the username
 [username]
 style_user = 'yellow bold'
 style_root = 'black bold'
-format = '[$user](#2883ff) ' # 2883ff
+format = '[$user](green) '
 disabled = false
 show_always = true
 
@@ -61,7 +58,7 @@ home_symbol = '~'
 # read_only_style = '197'
 read_only = '  '
 format = '[//](black bold) [$path]($style)[$read_only]($read_only_style) '
-style = '#7ed1fb' # yellow bold
+style = 'purple'
 
 
 # Shows current git branch
@@ -70,7 +67,7 @@ style = '#7ed1fb' # yellow bold
 symbol = ' '
 format = '[//](black bold) [$symbol\[$branch\]]($style) '
 # truncation_length = 0
-# truncation_symbol = '…/'
+truncation_symbol = '…/'
 style = 'bold green'
 
 # Shows current git status
