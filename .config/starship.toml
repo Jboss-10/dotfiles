@@ -5,7 +5,7 @@ add_newline = false
 command_timeout = 2000
 
 format = """[╭──────❯](cyan)
-[│](cyan)$username$kubernetes$directory$git_branch$git_status$git_metrics$python
+[│](cyan)$username$directory$git_branch$git_status$git_metrics$python$kubernetes
 [╰─❯](cyan) 
 """
 
