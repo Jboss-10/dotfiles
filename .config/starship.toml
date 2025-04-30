@@ -4,7 +4,7 @@
 add_newline = false
 command_timeout = 2000
 
-format = """[╭──────❯](cyan)
+format = """[╭──────❯](cyan) [$cmd_duration](blue)
 [│](cyan)$username$directory$git_branch$git_status$git_metrics$python$kubernetes
 [╰─❯](cyan) 
 """
@@ -14,6 +14,9 @@ symbol = "╭──"
 variable = 'SHELL'
 format = "$symbol"
 disabled = false
+
+[cmd_duration]
+format = "╰> took $duration"
 
 [username]
 style_user = 'yellow bold'
