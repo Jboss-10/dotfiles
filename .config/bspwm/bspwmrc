@@ -25,7 +25,7 @@ $HOME/setbspwmcolors.sh
 bspc wm --reorder-monitors DP-4 HDMI-0 DP-3
 bspc config pointer_motion_interval 6ms
 
-~/.scrits/randomwallpaper.sh
+~/.scripts/randomwallpaper.sh
 redshift -c .config/redshift/redshift.conf &
 sxhkd &
 dunst &
