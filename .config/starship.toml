@@ -4,7 +4,7 @@
 add_newline = false
 command_timeout = 2000
 
-format = """[╭──────❯](cyan) [$cmd_duration](blue)
+format = """[╭──────❯](cyan) [$shell $cmd_duration](blue)
 [│](cyan)$username$directory$git_branch$git_status$git_metrics$python$kubernetes
 [╰─❯$sudo](cyan) 
 """
@@ -12,6 +12,10 @@ format = """[╭──────❯](cyan) [$cmd_duration](blue)
 [sudo]
 format = "❯"
 disabled = false
+
+[shell]
+disabled = false
+fish_indicator = ''
 
 [env_var]
 symbol = "╭──"
