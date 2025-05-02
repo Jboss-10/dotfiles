@@ -6,8 +6,12 @@ command_timeout = 2000
 
 format = """[╭──────❯](cyan) [$cmd_duration](blue)
 [│](cyan)$username$directory$git_branch$git_status$git_metrics$python$kubernetes
-[╰─❯](cyan) 
+[╰─❯$sudo](cyan) 
 """
+
+[sudo]
+format = "❯"
+disabled = false
 
 [env_var]
 symbol = "╭──"
