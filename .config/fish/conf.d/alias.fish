@@ -6,6 +6,7 @@ alias la 'eza -a --color=always --group-directories-first --icons' # all files a
 alias ll 'eza -l --color=always --group-directories-first --icons' # long format
 alias lt 'eza -aT --color=always --group-directories-first --icons -I .git' # tree listing
 alias l. 'eza -ald --color=always --group-directories-first --icons .*' # show only dotfiles
+alias lD 'eza -lD --color=always --group-directories-first --icons'
 
 # Replace some more things with better alternatives
 alias cat 'bat --style header --style snip --style changes --style header'
