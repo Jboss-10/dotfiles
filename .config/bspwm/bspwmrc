@@ -38,3 +38,4 @@ clipmenud &
 arbtt-capture --sample-rate 1 &
 kdeconnectd &
 kdeconnect-indicator &
+easyeffects --gapplication-service -l eq &
