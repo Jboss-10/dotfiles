@@ -164,3 +164,6 @@ super + button{4,5}
 
 super + {h,x}
     bspc desktop {next,prev} -f
+
+super + shift + m
+    bspc node -n last.!automatic

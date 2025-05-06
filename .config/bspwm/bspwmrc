@@ -30,9 +30,9 @@ redshift -c .config/redshift/redshift.conf &
 sxhkd &
 dunst &
 bspc desktop -f 1
-syncthing --no-browser &
 picom --config .config/picom/picom.conf &
 ~/.config/polybar/launch.sh
+syncthing --no-browser &
 steam -silent &
 clipmenud &
 arbtt-capture --sample-rate 1 &
