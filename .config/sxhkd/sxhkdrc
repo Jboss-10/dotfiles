@@ -49,6 +49,10 @@ super + f
 # bspwm hotkeys
 #
 
+# Move current window to a pre-selected space
+super + shift + m
+    bspc node -n last.!automatic
+
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
@@ -125,7 +129,7 @@ super + ctrl + {n,e,i,a}
 
 # preselect the ratio
 super + ctrl + {1-9}
-	bspc node -o 0.{1-10}
+	bspc node -o -1.{1-10}
 
 # cancel the preselection for the focused node
 super + ctrl + space
@@ -133,7 +137,7 @@ super + ctrl + space
 
 # cancel the preselection for the focused desktop
 super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+	bspc query -N -d | xargs -I id -n 0 bspc node id -p cancel
 
 #
 # move/resize
@@ -150,3 +154,13 @@ super + alt + shift + {n,e,i,a}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+super + ctrl + shift + {1-9,0}
+  bspc node -d '^{1-9,10}' --follow
+
+super + button{4,5}
+    bspc desktop {next,prev} -f
+
+super + {h,x}
+    bspc desktop {next,prev} -f
