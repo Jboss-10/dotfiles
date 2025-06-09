@@ -26,6 +26,7 @@ bspc wm --reorder-monitors DP-4 HDMI-0 DP-3
 bspc config pointer_motion_interval 6ms
 
 ~/.scripts/randomwallpaper.sh
+#~/.scripts/wormwal.fish
 redshift -c .config/redshift/redshift.conf &
 sxhkd &
 dunst &
