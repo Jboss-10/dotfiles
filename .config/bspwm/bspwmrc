@@ -2,8 +2,6 @@
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
-autorandr -l main
-
 bspc monitor DP-4 -d 1 2 3 4 5
 bspc monitor HDMI-0 -d 6 7 8
 bspc monitor DP-3 -d 9 10
@@ -24,6 +22,7 @@ $HOME/setbspwmcolors.sh
 
 bspc wm --reorder-monitors DP-4 HDMI-0 DP-3
 bspc config pointer_motion_interval 6ms
+autorandr -l main
 
 ~/.scripts/randomwallpaper.sh
 #~/.scripts/wormwal.fish
