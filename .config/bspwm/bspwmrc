@@ -22,7 +22,7 @@ $HOME/setbspwmcolors.sh
 
 bspc wm --reorder-monitors DP-4 HDMI-0 DP-3
 bspc config pointer_motion_interval 6ms
-autorandr -l main
+#autorandr -l main
 
 ~/.scripts/randomwallpaper.sh
 #~/.scripts/wormwal.fish
