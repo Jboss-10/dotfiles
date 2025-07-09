@@ -39,7 +39,7 @@ source ("/usr/bin/starship" init fish --print-full-init | psub)
 source /usr/share/doc/find-the-command/ftc.fish
 
 ## Run fastfetch if session is interactive
-if status --is-interactive && type -q fastfetch
+if status --is-interactive && type -q fastfetch && not set -q SCRATCHPAD
     fastfetch --config .config/fastfetch/config.jsonc
 end
 

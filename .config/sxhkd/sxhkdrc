@@ -167,3 +167,7 @@ super + {h,x}
 
 super + shift + m
     bspc node -n last.!automatic
+
+
+super + ctrl +Return
+	bspc rule -a \* -o state=floating sticky=on layer=above rectangle=720x360+600+26 && konsole --profile Scratchpad
