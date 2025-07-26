@@ -91,7 +91,7 @@ super + ctrl + {m,x,y,z}
 
 # focus the node in the given direction
 super + {_,shift + }{n,e,i,a}
-	bspc node -{f,s} {west,south,north,east}
+	bspc node -{f,s} {west,south,north,east} {_, --follow}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -170,4 +170,4 @@ super + shift + m
 
 
 super + ctrl +Return
-	bspc rule -a \* -o state=floating sticky=on layer=above rectangle=720x360+600+26 && konsole --profile Scratchpad
+	bspc rule -a \* -o state=floating sticky=on layer=above rectangle=720x360+600+26 && konsole --profile Scratchpad -e nvim ~/todo.txt

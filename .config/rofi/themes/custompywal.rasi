@@ -6,11 +6,11 @@
   }
 configuration {
   show-icons: true;
-  yoffset: -300;
+  yoffset: -400;
   }
 #window {
     border: 4px;
     border-color: @foreground;
     border-radius: 50px;
-    width: 20%;
+    width: 30%;
   }
