@@ -32,12 +32,13 @@ dunst &
 bspc desktop -f 1
 picom --config .config/picom/picom.conf &
 ~/.config/polybar/launch.sh
-syncthing-gtk &
+syncthing &
 steam -silent &
 clipmenud &
 arbtt-capture --sample-rate 1 &
 kdeconnectd &
 kdeconnect-indicator &
 easyeffects --gapplication-service -l eq &
+playerctld &
 sleep 10
-betterlockscreen -u (cat .cache/wal/wal)
+betterlockscreen -u "$(cat .cache/wal/wal)"
