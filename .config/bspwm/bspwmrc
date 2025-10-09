@@ -28,11 +28,10 @@ bspc config pointer_motion_interval 6ms
 #~/.scripts/wormwal.fish
 redshift -c .config/redshift/redshift.conf &
 sxhkd &
-dunst &
 bspc desktop -f 1
 picom --config .config/picom/picom.conf &
 ~/.config/polybar/launch.sh
-syncthing &
+syncthing --no-browser &
 steam -silent &
 clipmenud &
 arbtt-capture --sample-rate 1 &
