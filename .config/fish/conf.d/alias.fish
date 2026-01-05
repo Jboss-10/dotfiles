@@ -65,8 +65,6 @@ alias todo 'todoist s ; todoist l'
 alias todop 'todoist s ; todoist l | grep -v "Busses"'
 alias todops 'todop | cut -f 2- -d " " | sort'
 alias todonext 'todops | head -10 | nl'
-alias newwal '~/.scripts/randomwallpaper.sh'
-alias newtheme 'wal --theme random ; pywalfox update'
 alias gittree 'git log --all --topo-order --graph --show-signature --oneline'
 alias gittreelong ' git log --all --topo-order --graph --show-signature'
 alias rm 'rm -i'
@@ -85,3 +83,5 @@ function last_history_item
     echo $history[1]
 end
 abbr -a !! --position anywhere --function last_history_item
+
+abbr n nvim
