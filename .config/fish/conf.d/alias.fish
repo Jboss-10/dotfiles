@@ -61,10 +61,6 @@ alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n - %v"  | sort | tail -200 | nl'
 alias ripall 'expac --timefmt="%Y-%m-%d %T" "%l\t%n - %v" | sort | nl'
 
 # Personal Aliases
-alias todo 'todoist s ; todoist l'
-alias todop 'todoist s ; todoist l | grep -v "Busses"'
-alias todops 'todop | cut -f 2- -d " " | sort'
-alias todonext 'todops | head -10 | nl'
 alias gittree 'git log --all --topo-order --graph --show-signature --oneline'
 alias gittreelong ' git log --all --topo-order --graph --show-signature'
 alias rm 'rm -i'
