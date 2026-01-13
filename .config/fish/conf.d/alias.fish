@@ -81,3 +81,4 @@ end
 abbr -a !! --position anywhere --function last_history_item
 
 abbr n nvim
+abbr pacman paru

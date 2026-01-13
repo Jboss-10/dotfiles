@@ -40,7 +40,7 @@ source /usr/share/doc/find-the-command/ftc.fish
 
 ## Run fastfetch if session is interactive
 if status --is-interactive && type -q fastfetch && not set -q SCRATCHPAD
-    fastfetch --config .config/fastfetch/config.jsonc
+    fastfetch --config ~/.config/fastfetch/config.jsonc
 end
 
 if [ "$fish_key_bindings" = fish_vi_key_bindings ]
