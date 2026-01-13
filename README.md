@@ -13,3 +13,8 @@ These are my personal dotfiles.
 - sxhkd
 - starship
 - fisher
+
+Notification sound taken from mixkit
+
+https://mixkit.co/free-sound-effects/notification/
+Software interface start
