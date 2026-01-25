@@ -68,17 +68,15 @@ alias funcsave 'funcsave -d /home/jon/dotfiles/.config/fish/functions/'
 
 abbr nivm nvim
 abbr rm trash-put
-abbr g git
+abbr n nvim
+abbr pacman paru
 
+abbr g git
 abbr --command git c 'commit -am'
 abbr --command git co checkout
 abbr --command git d diff
 abbr --command git pom 'push origin master'
 
-function last_history_item
-    echo $history[1]
-end
-abbr -a !! --position anywhere --function last_history_item
-
-abbr n nvim
-abbr pacman paru
+abbr h hledger
+abbr --command hledger a add
+abbr --command hledger ba 'balance --tree'
