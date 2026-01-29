@@ -22,9 +22,6 @@ XF86AudioMute
 super + l
 	~/.config/lock.sh
 
-super + shift + s
-  konsole -e nvim stratch.txt
-
 super + ctrl + Escape
   konsole -e btop
 
