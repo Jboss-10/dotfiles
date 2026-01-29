@@ -25,6 +25,9 @@ super + l
 super + shift + s
   konsole -e nvim stratch.txt
 
+super + ctrl + Escape
+  konsole -e btop
+
 #
 # wm independent hotkeys
 #
