@@ -20,7 +20,7 @@ XF86AudioMute
 # lock computer
 
 super + l
-	~/.config/lock.sh
+	~/.scripts/lock.sh
 
 super + ctrl + Escape
   konsole -e btop
