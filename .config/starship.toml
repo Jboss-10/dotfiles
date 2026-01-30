@@ -2,7 +2,7 @@
 #What_is_starship: https://starship.rs/
 
 add_newline = false
-command_timeout = 2000
+command_timeout = 5000
 
 format = """[╭──────❯](cyan) [$shell $cmd_duration](blue)
 [│](cyan)$username$hostname$directory$git_branch$git_status$git_metrics$python
